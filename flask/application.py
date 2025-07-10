@@ -60,7 +60,7 @@ def serve_react():
 def serve_static_files(path):
     return send_from_directory(app.static_folder, path)
 
-CORS(app, supports_credentials=True, origins=["http://localhost:3000"])
+CORS(app, supports_credentials=True, origins=["https://mern-ipl-predictor-frontend.onrender.com"])
 
 if __name__ == "__main__":
     app.run(port=5000,debug=True)
