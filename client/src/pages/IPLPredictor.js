@@ -18,7 +18,7 @@ function App() {
     wickets: "",
     overs: ""
   });
-  const backendUrl = "http://localhost:5000"; // Use the environment variable or fallback to localhost
+  const backendUrl = "https://mern-ipl-predictor-flask.onrender.com"; // Use the environment variable or fallback to localhost
   const [predictedResult, setPredictedResult] = useState(null); // State to hold the predicted result
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
 
