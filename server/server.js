@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 //'https://login-signup-jwt-frontend-q7t3.onrender.com',
-const allowedOrigins = ['http://localhost:3000'];
+const allowedOrigins = ['https://mern-ipl-predictor-frontend.onrender.com'];
 
 app.use(cors({
   origin: allowedOrigins[0], // explicitly allow only this
