@@ -38,3 +38,5 @@ so in app cotext we keep the function getAuthState handy so in whatever page we 
 to authorize users only we call this function and check if authorized or not 
 
 now we also have to put the global getuser global function after login so we can fetch all the data
+
+in middleware what we do is fetch token from our cookie then decode that token using the secret key. now from that token we fetch the mongodb id of the username where the user is stored. ie. in mongo db every entry has an id associated with it. what we do is when we create an entry and generate a token we put this generated id of mongo db inside that token. now in middleware we decode that token and put that mongo db id in the req. So now after this our controller runs lets say for something. now we have that specific id inside our request itself so what we do is in the db we fetch the entry having that req ki id and do what we need to do. to understand better see the register or login controller and see how we are making the token. now in app context see getAuthState route and see the middleware and the controller related to it.
