@@ -1,0 +1,3 @@
+in appcontext what we are doing is running a use effect ie. when rendering our ui we are doing something just once.
+now what we are doing is first seeing if local storage mein token present hai ki ni. if not present we are running the functions given to get that auth state
+and get it stored in our local storage.
