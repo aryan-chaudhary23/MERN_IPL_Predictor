@@ -24,6 +24,7 @@ function App() {
         <Route path="/usage" element={<Usage/>} />
         <Route path="/working" element={<Working/>} />
         <Route path="/predictor" element={<IPLPredictor/>}/>
+        <Route path="*" element={<Home/>}/>
       </Routes>
     </div>
   );
